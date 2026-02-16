@@ -1,0 +1,207 @@
+; NguliFxAlgo GBPUSD GridTrading Configuration
+; Ranging market strategy optimized for GBPUSD consolidation periods
+; Multi-level entry system for sideways market conditions
+; Risk: Medium (0.7% per trade)
+; Target: 6-10% monthly returns in ranging conditions
+
+[Common]
+InpMagicNumber=20260316
+StrategyMode=0
+
+; ===== AI CONFIGURATION - GRID OPTIMIZED =====
+InpUseAI=true
+InpAIInfluenceMode=2
+InpAICallOnNewBar=true
+InpAICallOnSignal=true
+InpAICallOnRegimeChange=true
+InpAIMinSecondsBetweenCalls=120
+InpMinAIConfidence=0.70
+InpMaxAIRiskMultiplier=1.0
+InpEnableAINotifications=true
+InpEnableAIStrategySwitching=true
+InpEnableAISelfOptimization=true
+InpAINewsIntelligenceMode=2
+InpAIExplainDecisions=true
+InpAIStrategyCooldownBars=3
+InpAIStrategyValidationBars=12
+
+; ===== RISK MANAGEMENT - GRID MULTI-LEVEL =====
+InpRiskPerTrade=0.7
+InpUseFixedLot=false
+InpFixedLot=0.02
+InpMaxTradesPerDay=6
+InpMaxDailyLoss=3.5
+InpEquityGuard=12.0
+InpUseDynamicRisk=true
+InpUsePortfolioRiskCap=true
+InpMaxPortfolioRiskPct=2.5
+
+; ===== POSITION LIMITS - GRID MULTI-ENTRY =====
+InpMaxPositionsPerSymbol=4
+InpPostInitCooldownSeconds=30
+
+; ===== STOP LOSS & TAKE PROFIT - GRID RANGING =====
+InpUseAtrStops=true
+InpAtrMultiplierSL=1.5
+InpAtrMultiplierTP=2.5
+InpSLPoints=180
+InpTPPoints=320
+
+; ===== MARKET CONDITIONS - GRID RANGING SESSIONS =====
+InpUseTimeFilter=true
+InpStartHour=8
+InpEndHour=18
+InpOnlyProDuringSessions=true
+InpSessionRiskMult=0.9
+
+; ===== REGIME RISK SCALING - GRID RANGING FOCUS =====
+InpUseRegimeRiskScaling=true
+InpRiskMultCompression=1.4
+InpRiskMultExpansion=0.8
+InpRiskMultTrending=0.3
+InpRiskMultRanging=1.6
+InpRiskMultVolatile=0.5
+
+; ===== DRAWDOWN PROTECTION =====
+InpUseDrawdownRiskScaling=true
+
+; ===== NEWS FILTER - GRID PROTECTION =====
+InpUseNewsFilter=true
+InpMinsBeforeNews=45
+InpMinsAfterNews=90
+InpNewsCompleteHalt=true
+InpNewsRiskMultiplier=0.4
+
+; ===== DAILY TARGETS - GRID =====
+InpDailyProfitTarget=2.5
+
+; ===== EXECUTION QUALITY - GRID SPREAD TOLERANCE =====
+InpMaxSpreadPoints=35
+InpMaxSlippagePoints=20
+InpMaxLotsPerOrder=0.0
+InpTrackExecutionQuality=true
+
+; ===== BREAKEVEN & TRAILING - GRID PATIENT =====
+InpEnableBreakEven=true
+InpBreakEvenTriggerPct=40.0
+InpBreakEvenOffsetPoints=8
+InpEnableTrailing=true
+InpTrailingMode=0
+InpTrailingTriggerPct=60.0
+InpTrailingLockPct=30.0
+InpTrailingAtrMult=1.3
+
+; ===== PARTIAL CLOSE - GRID =====
+InpEnablePartialClose=true
+InpPartialCloseTriggerPct=50.0
+InpPartialClosePercent=40.0
+
+; ===== TIME EXIT - GRID PATIENCE =====
+InpEnableTimeExit=true
+InpMaxMinutesInTrade=480
+
+; ===== FRIDAY CLOSE - GRID =====
+InpAutoCloseFriday=true
+InpFridayCloseHour=16
+InpFridayCloseMinute=30
+
+; ===== MULTI-TIMEFRAME CONFIRMATION - GRID =====
+InpUseMultiTimeframe=true
+
+; ===== CORRELATION PROTECTION =====
+InpUseCorrelation=true
+
+; ===== MACRO BIAS - GRID FOCUS =====
+InpUseMacroBias=true
+InpDxySymbol=DXY
+InpMacroTimeframe=16385
+InpMacroFastMA=50
+InpMacroSlowMA=200
+InpUseYieldSpread=false
+
+; ===== STRUCTURE CONFIRMATION - GRID SUPPORT =====
+InpUseStructureConfirm=true
+InpStructureLookbackBars=300
+InpStructureConfirmBars=8
+InpDisplacementAtrMult=1.8
+InpStructureVolumeSpikeMult=0.8
+
+; ===== ORDER FLOW - GRID CONFIRMATION =====
+InpUseOrderFlowProxy=true
+InpOrderFlowHardFilter=false
+InpOrderFlowLookbackBars=60
+InpOrderFlowMinAbsDeltaZ=1.0
+InpOrderFlowMinVolumeZ=0.5
+
+; ===== INSTITUTIONAL LEVELS - GRID SUPPORT =====
+InpShowInstitutionalLevels=true
+InpShowFVGZones=true
+InpShowOrderBlockZones=true
+InpMaxFVGZones=15
+InpMaxOBZones=12
+
+; ===== NOTIFICATIONS - GRID =====
+InpEnablePush=true
+InpEnableMail=false
+InpEnableAlerts=true
+InpCleanExpertsLog=true
+InpNotifDetail=2
+InpProgressInterval=20
+InpProgressMinutes=60
+InpIntelHeartbeatMinutes=120
+InpForceHeartbeatPush=false
+InpIncludeIntel=true
+InpNotifyOnNoSignal=false
+InpEnableChartFeed=true
+InpChartFeedMaxItems=6
+InpChartFeedMaxChars=500
+
+; ===== MARGIN & SAFETY - GRID =====
+InpEnableMarginAlert=true
+InpMarginAlertLevelPct=65.0
+InpMarginAlertCooldownMinutes=20
+InpEnableDailySummary=true
+InpDailySummaryEarliestHour=8
+InpDailySummaryHour=17
+InpDailySummaryMinute=0
+InpForceDailySummaryPush=false
+
+; ===== SCALPER SETTINGS - GRID OPTIMIZED =====
+InpScalperTimeframe=15
+InpScalperUseSessionFilter=true
+InpScalperSessionStartHour=8
+InpScalperSessionEndHour=18
+InpScalperTickVolLookback=30
+InpScalperMinTickVolMult=1.0
+InpScalperFastEma=10
+InpScalperSlowEma=30
+InpScalperRsiPeriod=14
+InpScalperRsiOversoldMax=35
+InpScalperRsiOverboughtMin=65
+InpScalperAtrPeriod=14
+InpScalperAdxPeriod=14
+InpScalperMinAdx=15.0
+InpScalperBreakoutLookback=20
+InpScalperBreakoutAtrMult=0.08
+InpScalperAllowBreakout=false
+InpScalperAllowContinuation=true
+InpScalperExitOnRsiReversal=true
+InpScalperExitRsiDelta=0.8
+InpScalperExitOnEmaCross=true
+InpScalperMinStrength=0.75
+
+; ===== SWING SETTINGS - GRID OPTIMIZED =====
+InpSwingTimeframe=16385
+InpSwingEmaFast=40
+InpSwingEmaSlow=150
+InpSwingMacdFast=10
+InpSwingMacdSlow=24
+InpSwingMacdSignal=7
+InpSwingBreakoutLookback=60
+InpSwingAtrPeriod=14
+InpSwingBreakoutAtrMult=0.12
+InpSwingAtrMinPoints=0.0
+InpSwingAtrMaxPoints=0.0
+InpSwingExitOnTrendReversal=true
+InpSwingExitOnMacdReversal=true
+InpSwingMinStrength=0.80

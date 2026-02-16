@@ -1,0 +1,12 @@
+InpMagicNumber=20260211
+InpFilterByMagic=false
+InpSymbolFilter=
+InpReportDateFrom=0
+InpReportDateTo=0
+InpMaxTradesToList=30
+InpDebugDumpDeals=0
+InpEnablePush=true
+InpEnableMail=false
+InpEnableAlerts=false
+InpTelegramToken=YOUR_TELEGRAM_BOT_TOKEN
+InpTelegramChatId=YOUR_TELEGRAM_CHAT_ID

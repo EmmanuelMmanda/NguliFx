@@ -1,0 +1,88 @@
+# USDZAR Gambling Configuration
+# Extreme Emerging Market Risk Trading
+# Maximum leverage and risk for ultimate profit potential
+
+# Risk Management - Gambling 2.5% risk per trade (MAXIMUM)
+InpRiskPerTrade=2.5
+InpMaxDailyLoss=15.0
+InpDailyProfitTarget=12.0
+InpMaxPositionsPerSymbol=10
+InpMaxTradesPerDay=25
+
+# AI Integration - Gambling AI with minimal confidence
+InpUseAI=true
+InpMinAIConfidence=0.45
+InpMaxAIRiskMultiplier=5.0
+InpAIMinSecondsBetweenCalls=15
+InpAIConfirmationRequired=false
+
+# Spread Management - Gambling with extreme spread tolerance
+InpMaxSpreadPoints=600
+InpSpreadMultiplier=2.5
+InpSlippagePoints=400
+
+# Session Timing - Gambling 24/7 extreme trading
+InpUseSessionFilter=false
+InpSessionStartHour=0
+InpSessionEndHour=24
+InpSessionRiskMult=4.0
+
+# Strategy Configuration - Gambling all strategies enabled
+InpStrategyType=0
+InpUseMultiTimeframe=false
+InpHigherTimeframe=0
+InpTrendConfirmation=false
+InpUseVolatilityFilter=false
+
+# Scaling Logic - Gambling extreme scaling multiplication
+InpUseScaling=true
+InpScaleInMultiplier=3.0
+InpScaleOutMultiplier=2.0
+InpMaxScaleLevels=5
+InpScaleDistancePoints=50
+
+# News Filter - Gambling trades through all news
+InpUseNewsFilter=false
+InpMinsBeforeNews=0
+InpMinsAfterNews=0
+InpNewsRiskMultiplier=5.0
+InpNewsCompleteHalt=false
+InpHighImpactOnly=false
+
+# Drawdown Protection - Gambling minimal protection
+InpUseDrawdownRiskScaling=true
+InpDrawdownThresholds=30.0,45.0,60.0
+InpDrawdownRiskMultipliers=1.5,1.0,0.7
+InpEmergencyStopLevel=75.0
+
+# ATR Settings - Gambling with extreme ATR multiplication
+InpAtrMultiplier=5.0
+InpAtrPeriod=10
+InpMinAtrPoints=500
+InpMaxAtrPoints=2000
+
+# Correlation Filter - Gambling no correlation protection
+InpUseCorrelationFilter=false
+InpMaxCorrelatedPairs=10
+InpCorrelationThreshold=1.0
+InpCorrelationRiskReduction=0.0
+
+# Position Management - Gambling minimal position management
+InpUseBreakeven=false
+InpBreakevenTriggerPoints=0
+InpBreakevenOffsetPoints=0
+InpUseTrailingStop=false
+InpTrailingStartPoints=0
+InpTrailingStepPoints=0
+
+# Market Regime - Gambling maximum risk in all conditions
+InpRiskMultTrending=2.5
+InpRiskMultRanging=2.0
+InpRiskMultCompression=1.8
+InpTrendStrengthThreshold=0.1
+
+# Circuit Breakers - Gambling minimal circuit protection
+InpUseCircuitBreaker=true
+InpCircuitThreshold=40.0
+InpCircuitCooldownHours=2
+InpCircuitMaxLossPoints=3000

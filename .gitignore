@@ -1,0 +1,13 @@
+*
+!*/
+!.gitignore
+!Scripts/*.ex5
+!Scripts/**/*.ex5
+!Scripts/*.EX5
+!Scripts/**/*.EX5
+!Presets/*.set
+!Presets/**/*.set
+!Presets/*.SET
+!Presets/**/*.SET
+!Experts/NguliFxAlgo.ex5
+!Experts/NguliFxAlgo.EX5

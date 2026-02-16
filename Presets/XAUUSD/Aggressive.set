@@ -1,0 +1,88 @@
+# XAUUSD Aggressive Configuration
+# High-Risk Gold Trading Strategy
+# Maximum profit extraction from gold volatility with elevated risk
+
+# Risk Management - Aggressive 1.8% risk per trade
+InpRiskPerTrade=1.8
+InpMaxDailyLoss=9.0
+InpDailyProfitTarget=7.2
+InpMaxPositionsPerSymbol=6
+InpMaxTradesPerDay=15
+
+# AI Integration - Aggressive AI with lower confidence threshold
+InpUseAI=true
+InpMinAIConfidence=0.52
+InpMaxAIRiskMultiplier=4.5
+InpAIMinSecondsBetweenCalls=60
+InpAIConfirmationRequired=false
+
+# Spread Management - Aggressive with gold spread tolerance
+InpMaxSpreadPoints=200
+InpSpreadMultiplier=2.0
+InpSlippagePoints=180
+
+# Session Timing - Aggressive gold trading across all sessions
+InpUseSessionFilter=false
+InpSessionStartHour=0
+InpSessionEndHour=24
+InpSessionRiskMult=2.8
+
+# Strategy Configuration - Aggressive multi-timeframe
+InpStrategyType=0
+InpUseMultiTimeframe=true
+InpHigherTimeframe=30
+InpTrendConfirmation=false
+InpUseVolatilityFilter=false
+
+# Scaling Logic - Aggressive scaling with high multiplication
+InpUseScaling=true
+InpScaleInMultiplier=3.0
+InpScaleOutMultiplier=2.0
+InpMaxScaleLevels=4
+InpScaleDistancePoints=70
+
+# News Filter - Aggressive gold news trading
+InpUseNewsFilter=false
+InpMinsBeforeNews=1
+InpMinsAfterNews=1
+InpNewsRiskMultiplier=4.0
+InpNewsCompleteHalt=false
+InpHighImpactOnly=false
+
+# Drawdown Protection - Aggressive drawdown tolerance
+InpUseDrawdownRiskScaling=true
+InpDrawdownThresholds=25.0,35.0,45.0
+InpDrawdownRiskMultipliers=1.3,0.9,0.6
+InpEmergencyStopLevel=55.0
+
+# ATR Settings - Aggressive with high gold ATR multiplication
+InpAtrMultiplier=4.5
+InpAtrPeriod=14
+InpMinAtrPoints=300
+InpMaxAtrPoints=1200
+
+# Correlation Filter - Aggressive correlation management
+InpUseCorrelationFilter=false
+InpMaxCorrelatedPairs=2
+InpCorrelationThreshold=0.8
+InpCorrelationRiskReduction=0.5
+
+# Position Management - Aggressive quick profit taking
+InpUseBreakeven=true
+InpBreakevenTriggerPoints=70
+InpBreakevenOffsetPoints=20
+InpUseTrailingStop=true
+InpTrailingStartPoints=120
+InpTrailingStepPoints=60
+
+# Market Regime - Aggressive in all gold market conditions
+InpRiskMultTrending=2.2
+InpRiskMultRanging=1.8
+InpRiskMultCompression=1.5
+InpTrendStrengthThreshold=0.2
+
+# Circuit Breakers - Aggressive circuit protection
+InpUseCircuitBreaker=true
+InpCircuitThreshold=30.0
+InpCircuitCooldownHours=4
+InpCircuitMaxLossPoints=1500

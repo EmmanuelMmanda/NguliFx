@@ -1,0 +1,209 @@
+; NguliFxAlgo News Trading Configuration
+; High-impact news event trading with volatility capture
+; Optimized for major economic releases
+; Risk: High (1.2% per trade)
+; Target: 8-15% monthly returns during news events
+
+[Common]
+InpMagicNumber=20260211
+StrategyMode=0
+
+; ===== AI CONFIGURATION =====
+InpUseAI=true
+InpAIInfluenceMode=1
+InpAICallOnNewBar=true
+InpAICallOnSignal=true
+InpAICallOnRegimeChange=true
+InpAIMinSecondsBetweenCalls=30
+InpMinAIConfidence=0.60
+InpMaxAIRiskMultiplier=2.0
+InpEnableAINotifications=true
+InpEnableAIStrategySwitching=true
+InpEnableAISelfOptimization=true
+InpAINewsIntelligenceMode=1
+InpAIExplainDecisions=true
+InpAIStrategyCooldownBars=1
+InpAIStrategyValidationBars=5
+
+; ===== RISK MANAGEMENT =====
+InpRiskPerTrade=1.2
+InpUseFixedLot=false
+InpFixedLot=0.025
+InpMaxTradesPerDay=6
+InpMaxDailyLoss=4.0
+InpEquityGuard=12.0
+InpUseDynamicRisk=true
+InpUsePortfolioRiskCap=true
+InpMaxPortfolioRiskPct=2.0
+
+; ===== POSITION LIMITS =====
+InpMaxPositionsPerSymbol=2
+InpPostInitCooldownSeconds=10
+
+; ===== STOP LOSS & TAKE PROFIT =====
+InpUseAtrStops=true
+InpAtrMultiplierSL=0.8
+InpAtrMultiplierTP=3.0
+InpSLPoints=80
+InpTPPoints=300
+
+; ===== MARKET CONDITIONS =====
+InpUseTimeFilter=true
+InpStartHour=0
+InpEndHour=24
+InpOnlyProDuringSessions=false
+InpSessionRiskMult=1.5
+
+; ===== REGIME RISK SCALING =====
+InpUseRegimeRiskScaling=true
+InpRiskMultCompression=1.0
+InpRiskMultExpansion=1.8
+InpRiskMultTrending=2.2
+InpRiskMultRanging=1.0
+InpRiskMultVolatile=2.5
+
+; ===== DRAWDOWN PROTECTION =====
+InpUseDrawdownRiskScaling=false
+
+; ===== NEWS FILTER (SPECIAL) =====
+InpUseNewsFilter=false
+InpMinsBeforeNews=5
+InpMinsAfterNews=15
+InpNewsCompleteHalt=false
+InpNewsRiskMultiplier=2.5
+
+; ===== DAILY TARGETS =====
+InpDailyProfitTarget=3.0
+
+; ===== EXECUTION QUALITY =====
+InpMaxSpreadPoints=35
+InpMaxSlippagePoints=20
+InpMaxLotsPerOrder=0.0
+InpTrackExecutionQuality=true
+
+; ===== BREAKEVEN & TRAILING =====
+InpEnableBreakEven=true
+InpBreakEvenTriggerPct=25.0
+InpBreakEvenOffsetPoints=2
+InpEnableTrailing=true
+InpTrailingMode=1
+InpTrailingTriggerPct=35.0
+InpTrailingLockPct=15.0
+InpTrailingAtrMult=2.2
+
+; ===== PARTIAL CLOSE =====
+InpEnablePartialClose=true
+InpPartialCloseTriggerPct=40.0
+InpPartialClosePercent=60.0
+
+; ===== TIME EXIT =====
+InpEnableTimeExit=true
+InpMaxMinutesInTrade=120
+
+; ===== FRIDAY CLOSE =====
+InpAutoCloseFriday=false
+InpFridayCloseHour=22
+InpFridayCloseMinute=0
+
+; ===== MULTI-TIMEFRAME CONFIRMATION =====
+InpUseMultiTimeframe=false
+
+; ===== CORRELATION PROTECTION =====
+InpUseCorrelation=false
+
+; ===== MACRO BIAS =====
+InpUseMacroBias=true
+InpDxySymbol=DXY
+InpMacroTimeframe=16385
+InpMacroFastMA=20
+InpMacroSlowMA=100
+InpUseYieldSpread=true
+InpUS10YSymbol=US10Y
+InpUS02YSymbol=US02Y
+
+; ===== STRUCTURE CONFIRMATION =====
+InpUseStructureConfirm=false
+InpStructureLookbackBars=80
+InpStructureConfirmBars=2
+InpDisplacementAtrMult=0.7
+InpStructureVolumeSpikeMult=2.0
+
+; ===== ORDER FLOW =====
+InpUseOrderFlowProxy=true
+InpOrderFlowHardFilter=false
+InpOrderFlowLookbackBars=20
+InpOrderFlowMinAbsDeltaZ=0.6
+InpOrderFlowMinVolumeZ=0.4
+
+; ===== INSTITUTIONAL LEVELS =====
+InpShowInstitutionalLevels=false
+InpShowFVGZones=false
+InpShowOrderBlockZones=false
+InpMaxFVGZones=3
+InpMaxOBZones=3
+
+; ===== NOTIFICATIONS =====
+InpEnablePush=true
+InpEnableMail=false
+InpEnableAlerts=true
+InpCleanExpertsLog=false
+InpNotifDetail=3
+InpProgressInterval=5
+InpProgressMinutes=15
+InpIntelHeartbeatMinutes=30
+InpForceHeartbeatPush=true
+InpIncludeIntel=true
+InpNotifyOnNoSignal=false
+InpEnableChartFeed=true
+InpChartFeedMaxItems=10
+InpChartFeedMaxChars=1200
+
+; ===== MARGIN & SAFETY =====
+InpEnableMarginAlert=true
+InpMarginAlertLevelPct=45.0
+InpMarginAlertCooldownMinutes=5
+InpEnableDailySummary=true
+InpDailySummaryEarliestHour=0
+InpDailySummaryHour=23
+InpDailySummaryMinute=30
+InpForceDailySummaryPush=true
+
+; ===== SCALPER SETTINGS (News Optimized) =====
+InpScalperTimeframe=5
+InpScalperUseSessionFilter=false
+InpScalperSessionStartHour=0
+InpScalperSessionEndHour=24
+InpScalperTickVolLookback=6
+InpScalperMinTickVolMult=0.7
+InpScalperFastEma=5
+InpScalperSlowEma=15
+InpScalperRsiPeriod=5
+InpScalperRsiOversoldMax=20
+InpScalperRsiOverboughtMin=80
+InpScalperAtrPeriod=5
+InpScalperAdxPeriod=5
+InpScalperMinAdx=10.0
+InpScalperBreakoutLookback=3
+InpScalperBreakoutAtrMult=0.02
+InpScalperAllowBreakout=true
+InpScalperAllowContinuation=true
+InpScalperExitOnRsiReversal=true
+InpScalperExitRsiDelta=0.1
+InpScalperExitOnEmaCross=true
+InpScalperMinStrength=0.50
+
+; ===== SWING SETTINGS (News Optimized) =====
+InpSwingTimeframe=30
+InpSwingEmaFast=25
+InpSwingEmaSlow=100
+InpSwingMacdFast=8
+InpSwingMacdSlow=21
+InpSwingMacdSignal=5
+InpSwingBreakoutLookback=15
+InpSwingAtrPeriod=8
+InpSwingBreakoutAtrMult=0.08
+InpSwingAtrMinPoints=0.0
+InpSwingAtrMaxPoints=0.0
+InpSwingExitOnTrendReversal=true
+InpSwingExitOnMacdReversal=true
+InpSwingMinStrength=0.55

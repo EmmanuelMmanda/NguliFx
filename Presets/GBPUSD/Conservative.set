@@ -1,0 +1,207 @@
+; NguliFxAlgo GBPUSD Conservative Configuration
+; Steady growth with minimal risk for GBPUSD volatility
+; Optimized for cable's unique characteristics and wider spreads
+; Risk: Low (0.35% per trade)
+; Target: 2-4% monthly growth with cable stability
+
+[Common]
+InpMagicNumber=20260311
+StrategyMode=0
+
+; ===== AI CONFIGURATION =====
+InpUseAI=true
+InpAIInfluenceMode=2
+InpAICallOnNewBar=true
+InpAICallOnSignal=true
+InpAICallOnRegimeChange=true
+InpAIMinSecondsBetweenCalls=150
+InpMinAIConfidence=0.78
+InpMaxAIRiskMultiplier=0.7
+InpEnableAINotifications=true
+InpEnableAIStrategySwitching=true
+InpEnableAISelfOptimization=true
+InpAINewsIntelligenceMode=2
+InpAIExplainDecisions=true
+InpAIStrategyCooldownBars=5
+InpAIStrategyValidationBars=18
+
+; ===== RISK MANAGEMENT - GBPUSD ADJUSTED =====
+InpRiskPerTrade=0.35
+InpUseFixedLot=false
+InpFixedLot=0.01
+InpMaxTradesPerDay=2
+InpMaxDailyLoss=1.5
+InpEquityGuard=6.0
+InpUseDynamicRisk=true
+InpUsePortfolioRiskCap=true
+InpMaxPortfolioRiskPct=1.0
+
+; ===== POSITION LIMITS =====
+InpMaxPositionsPerSymbol=1
+InpPostInitCooldownSeconds=75
+
+; ===== STOP LOSS & TAKE PROFIT - CABLE VOLATILITY =====
+InpUseAtrStops=true
+InpAtrMultiplierSL=2.1
+InpAtrMultiplierTP=3.6
+InpSLPoints=280
+InpTPPoints=500
+
+; ===== MARKET CONDITIONS - CABLE SESSIONS =====
+InpUseTimeFilter=true
+InpStartHour=8
+InpEndHour=18
+InpOnlyProDuringSessions=true
+InpSessionRiskMult=0.85
+
+; ===== REGIME RISK SCALING =====
+InpUseRegimeRiskScaling=true
+InpRiskMultCompression=0.55
+InpRiskMultExpansion=0.75
+InpRiskMultTrending=0.85
+InpRiskMultRanging=0.65
+InpRiskMultVolatile=0.35
+
+; ===== DRAWDOWN PROTECTION =====
+InpUseDrawdownRiskScaling=true
+
+; ===== NEWS FILTER - BOE SENSITIVE =====
+InpUseNewsFilter=true
+InpMinsBeforeNews=50
+InpMinsAfterNews=100
+InpNewsCompleteHalt=true
+InpNewsRiskMultiplier=0.35
+
+; ===== DAILY TARGETS =====
+InpDailyProfitTarget=2.0
+
+; ===== EXECUTION QUALITY - CABLE SPREADS =====
+InpMaxSpreadPoints=25
+InpMaxSlippagePoints=15
+InpMaxLotsPerOrder=0.0
+InpTrackExecutionQuality=true
+
+; ===== BREAKEVEN & TRAILING =====
+InpEnableBreakEven=true
+InpBreakEvenTriggerPct=38.0
+InpBreakEvenOffsetPoints=7
+InpEnableTrailing=true
+InpTrailingMode=0
+InpTrailingTriggerPct=55.0
+InpTrailingLockPct=28.0
+InpTrailingAtrMult=1.1
+
+; ===== PARTIAL CLOSE =====
+InpEnablePartialClose=true
+InpPartialCloseTriggerPct=55.0
+InpPartialClosePercent=28.0
+
+; ===== TIME EXIT =====
+InpEnableTimeExit=true
+InpMaxMinutesInTrade=600
+
+; ===== FRIDAY CLOSE =====
+InpAutoCloseFriday=true
+InpFridayCloseHour=16
+InpFridayCloseMinute=0
+
+; ===== MULTI-TIMEFRAME CONFIRMATION =====
+InpUseMultiTimeframe=true
+
+; ===== CORRELATION PROTECTION =====
+InpUseCorrelation=true
+
+; ===== MACRO BIAS - CABLE FOCUS =====
+InpUseMacroBias=true
+InpDxySymbol=DXY
+InpMacroTimeframe=16385
+InpMacroFastMA=50
+InpMacroSlowMA=200
+InpUseYieldSpread=false
+
+; ===== STRUCTURE CONFIRMATION =====
+InpUseStructureConfirm=true
+InpStructureLookbackBars=180
+InpStructureConfirmBars=4
+InpDisplacementAtrMult=1.1
+InpStructureVolumeSpikeMult=1.3
+
+; ===== ORDER FLOW =====
+InpUseOrderFlowProxy=true
+InpOrderFlowHardFilter=true
+InpOrderFlowLookbackBars=35
+InpOrderFlowMinAbsDeltaZ=1.1
+InpOrderFlowMinVolumeZ=0.7
+
+; ===== INSTITUTIONAL LEVELS =====
+InpShowInstitutionalLevels=true
+InpShowFVGZones=true
+InpShowOrderBlockZones=true
+InpMaxFVGZones=6
+InpMaxOBZones=6
+
+; ===== NOTIFICATIONS =====
+InpEnablePush=true
+InpEnableMail=false
+InpEnableAlerts=true
+InpCleanExpertsLog=true
+InpNotifDetail=2
+InpProgressInterval=20
+InpProgressMinutes=90
+InpIntelHeartbeatMinutes=90
+InpForceHeartbeatPush=false
+InpIncludeIntel=true
+InpNotifyOnNoSignal=false
+InpEnableChartFeed=true
+InpChartFeedMaxItems=5
+InpChartFeedMaxChars=450
+
+; ===== MARGIN & SAFETY =====
+InpEnableMarginAlert=true
+InpMarginAlertLevelPct=65.0
+InpMarginAlertCooldownMinutes=20
+InpEnableDailySummary=true
+InpDailySummaryEarliestHour=8
+InpDailySummaryHour=17
+InpDailySummaryMinute=0
+InpForceDailySummaryPush=false
+
+; ===== SCALPER SETTINGS - CABLE ADJUSTED =====
+InpScalperTimeframe=5
+InpScalperUseSessionFilter=true
+InpScalperSessionStartHour=8
+InpScalperSessionEndHour=18
+InpScalperTickVolLookback=20
+InpScalperMinTickVolMult=1.15
+InpScalperFastEma=10
+InpScalperSlowEma=28
+InpScalperRsiPeriod=14
+InpScalperRsiOversoldMax=30
+InpScalperRsiOverboughtMin=70
+InpScalperAtrPeriod=14
+InpScalperAdxPeriod=14
+InpScalperMinAdx=23.0
+InpScalperBreakoutLookback=10
+InpScalperBreakoutAtrMult=0.05
+InpScalperAllowBreakout=true
+InpScalperAllowContinuation=true
+InpScalperExitOnRsiReversal=true
+InpScalperExitRsiDelta=0.45
+InpScalperExitOnEmaCross=true
+InpScalperMinStrength=0.83
+
+; ===== SWING SETTINGS - CABLE VOLATILITY =====
+InpSwingTimeframe=16385
+InpSwingEmaFast=58
+InpSwingEmaSlow=190
+InpSwingMacdFast=12
+InpSwingMacdSlow=26
+InpSwingMacdSignal=9
+InpSwingBreakoutLookback=38
+InpSwingAtrPeriod=14
+InpSwingBreakoutAtrMult=0.11
+InpSwingAtrMinPoints=0.0
+InpSwingAtrMaxPoints=0.0
+InpSwingExitOnTrendReversal=true
+InpSwingExitOnMacdReversal=true
+InpSwingMinStrength=0.83

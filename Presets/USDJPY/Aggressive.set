@@ -1,0 +1,209 @@
+; NguliFxAlgo USDJPY Aggressive Configuration
+; Maximum profit potential with managed risk for USDJPY
+; High-risk, high-reward strategy optimized for Asian session volatility
+; Risk: High (1.5% per trade)
+; Target: 15-25% monthly returns with aggressive scaling
+
+[Common]
+InpMagicNumber=20260326
+StrategyMode=0
+
+; ===== AI CONFIGURATION - AGGRESSIVE MAXIMUM =====
+InpUseAI=true
+InpAIInfluenceMode=1
+InpAICallOnNewBar=true
+InpAICallOnSignal=true
+InpAICallOnRegimeChange=true
+InpAIMinSecondsBetweenCalls=30
+InpMinAIConfidence=0.55
+InpMaxAIRiskMultiplier=2.2
+InpEnableAINotifications=true
+InpEnableAIStrategySwitching=true
+InpEnableAISelfOptimization=true
+InpAINewsIntelligenceMode=1
+InpAIExplainDecisions=true
+InpAIStrategyCooldownBars=1
+InpAIStrategyValidationBars=5
+
+; ===== RISK MANAGEMENT - AGGRESSIVE MAXIMUM =====
+InpRiskPerTrade=1.5
+InpUseFixedLot=false
+InpFixedLot=0.035
+InpMaxTradesPerDay=10
+InpMaxDailyLoss=6.0
+InpEquityGuard=18.0
+InpUseDynamicRisk=true
+InpUsePortfolioRiskCap=true
+InpMaxPortfolioRiskPct=4.0
+
+; ===== POSITION LIMITS - AGGRESSIVE =====
+InpMaxPositionsPerSymbol=3
+InpPostInitCooldownSeconds=8
+
+; ===== STOP LOSS & TAKE PROFIT - AGGRESSIVE RATIOS =====
+InpUseAtrStops=true
+InpAtrMultiplierSL=1.0
+InpAtrMultiplierTP=3.8
+InpSLPoints=45
+InpTPPoints=180
+
+; ===== MARKET CONDITIONS - AGGRESSIVE 24/7 =====
+InpUseTimeFilter=false
+InpStartHour=0
+InpEndHour=24
+InpOnlyProDuringSessions=false
+InpSessionRiskMult=1.8
+
+; ===== REGIME RISK SCALING - AGGRESSIVE MAXIMUM =====
+InpUseRegimeRiskScaling=true
+InpRiskMultCompression=1.2
+InpRiskMultExpansion=1.8
+InpRiskMultTrending=2.5
+InpRiskMultRanging=1.6
+InpRiskMultVolatile=1.0
+
+; ===== DRAWDOWN PROTECTION - AGGRESSIVE DISABLED =====
+InpUseDrawdownRiskScaling=false
+
+; ===== NEWS FILTER - AGGRESSIVE REDUCED =====
+InpUseNewsFilter=false
+InpMinsBeforeNews=15
+InpMinsAfterNews=30
+InpNewsCompleteHalt=false
+InpNewsRiskMultiplier=2.0
+
+; ===== DAILY TARGETS - AGGRESSIVE MAXIMUM =====
+InpDailyProfitTarget=5.0
+
+; ===== EXECUTION QUALITY - AGGRESSIVE TOLERANCE =====
+InpMaxSpreadPoints=35
+InpMaxSlippagePoints=20
+InpMaxLotsPerOrder=0.0
+InpTrackExecutionQuality=true
+
+; ===== BREAKEVEN & TRAILING - AGGRESSIVE FAST =====
+InpEnableBreakEven=true
+InpBreakEvenTriggerPct=28.0
+InpBreakEvenOffsetPoints=1
+InpEnableTrailing=true
+InpTrailingMode=1
+InpTrailingTriggerPct=40.0
+InpTrailingLockPct=18.0
+InpTrailingAtrMult=2.0
+
+; ===== PARTIAL CLOSE - AGGRESSIVE MAXIMUM =====
+InpEnablePartialClose=true
+InpPartialCloseTriggerPct=40.0
+InpPartialClosePercent=65.0
+
+; ===== TIME EXIT - AGGRESSIVE FAST =====
+InpEnableTimeExit=true
+InpMaxMinutesInTrade=180
+
+; ===== FRIDAY CLOSE - AGGRESSIVE DISABLED =====
+InpAutoCloseFriday=false
+InpFridayCloseHour=22
+InpFridayCloseMinute=0
+
+; ===== MULTI-TIMEFRAME CONFIRMATION - AGGRESSIVE DISABLED =====
+InpUseMultiTimeframe=false
+
+; ===== CORRELATION PROTECTION - AGGRESSIVE DISABLED =====
+InpUseCorrelation=false
+
+; ===== MACRO BIAS - AGGRESSIVE YIELD FOCUS =====
+InpUseMacroBias=true
+InpDxySymbol=DXY
+InpMacroTimeframe=16385
+InpMacroFastMA=25
+InpMacroSlowMA=120
+InpUseYieldSpread=true
+InpUS10YSymbol=US10Y
+InpUS02YSymbol=US02Y
+
+; ===== STRUCTURE CONFIRMATION - AGGRESSIVE DISABLED =====
+InpUseStructureConfirm=false
+InpStructureLookbackBars=80
+InpStructureConfirmBars=2
+InpDisplacementAtrMult=0.8
+InpStructureVolumeSpikeMult=2.0
+
+; ===== ORDER FLOW - AGGRESSIVE CONFIRMATION =====
+InpUseOrderFlowProxy=true
+InpOrderFlowHardFilter=false
+InpOrderFlowLookbackBars=20
+InpOrderFlowMinAbsDeltaZ=0.6
+InpOrderFlowMinVolumeZ=0.4
+
+; ===== INSTITUTIONAL LEVELS - AGGRESSIVE DISABLED =====
+InpShowInstitutionalLevels=false
+InpShowFVGZones=false
+InpShowOrderBlockZones=false
+InpMaxFVGZones=3
+InpMaxOBZones=3
+
+; ===== NOTIFICATIONS - AGGRESSIVE FAST =====
+InpEnablePush=true
+InpEnableMail=false
+InpEnableAlerts=true
+InpCleanExpertsLog=false
+InpNotifDetail=3
+InpProgressInterval=5
+InpProgressMinutes=10
+InpIntelHeartbeatMinutes=20
+InpForceHeartbeatPush=true
+InpIncludeIntel=true
+InpNotifyOnNoSignal=false
+InpEnableChartFeed=true
+InpChartFeedMaxItems=12
+InpChartFeedMaxChars=1200
+
+; ===== MARGIN & SAFETY - AGGRESSIVE FAST ALERTS =====
+InpEnableMarginAlert=true
+InpMarginAlertLevelPct=45.0
+InpMarginAlertCooldownMinutes=5
+InpEnableDailySummary=true
+InpDailySummaryEarliestHour=0
+InpDailySummaryHour=23
+InpDailySummaryMinute=30
+InpForceDailySummaryPush=true
+
+; ===== SCALPER SETTINGS - ASIAN AGGRESSIVE =====
+InpScalperTimeframe=1
+InpScalperUseSessionFilter=false
+InpScalperSessionStartHour=0
+InpScalperSessionEndHour=24
+InpScalperTickVolLookback=6
+InpScalperMinTickVolMult=0.8
+InpScalperFastEma=4
+InpScalperSlowEma=15
+InpScalperRsiPeriod=6
+InpScalperRsiOversoldMax=25
+InpScalperRsiOverboughtMin=75
+InpScalperAtrPeriod=6
+InpScalperAdxPeriod=6
+InpScalperMinAdx=10.0
+InpScalperBreakoutLookback=4
+InpScalperBreakoutAtrMult=0.018
+InpScalperAllowBreakout=true
+InpScalperAllowContinuation=true
+InpScalperExitOnRsiReversal=true
+InpScalperExitRsiDelta=0.2
+InpScalperExitOnEmaCross=true
+InpScalperMinStrength=0.52
+
+; ===== SWING SETTINGS - AGGRESSIVE FAST =====
+InpSwingTimeframe=30
+InpSwingEmaFast=20
+InpSwingEmaSlow=80
+InpSwingMacdFast=6
+InpSwingMacdSlow=16
+InpSwingMacdSignal=4
+InpSwingBreakoutLookback=12
+InpSwingAtrPeriod=8
+InpSwingBreakoutAtrMult=0.06
+InpSwingAtrMinPoints=0.0
+InpSwingAtrMaxPoints=0.0
+InpSwingExitOnTrendReversal=true
+InpSwingExitOnMacdReversal=true
+InpSwingMinStrength=0.55

@@ -1,0 +1,88 @@
+# USDZAR Professional Configuration
+# Institutional Emerging Market Trading
+# Professional-grade ZAR trading with institutional risk management
+
+# Risk Management - Professional 0.7% risk per trade
+InpRiskPerTrade=0.7
+InpMaxDailyLoss=3.5
+InpDailyProfitTarget=2.5
+InpMaxPositionsPerSymbol=3
+InpMaxTradesPerDay=6
+
+# AI Integration - Professional institutional level
+InpUseAI=true
+InpMinAIConfidence=0.70
+InpMaxAIRiskMultiplier=1.8
+InpAIMinSecondsBetweenCalls=300
+InpAIConfirmationRequired=true
+
+# Spread Management - Professional EM spreads
+InpMaxSpreadPoints=280
+InpSpreadMultiplier=1.3
+InpSlippagePoints=150
+
+# Session Timing - Institutional hours with EM focus
+InpUseSessionFilter=true
+InpSessionStartHour=8
+InpSessionEndHour=18
+InpSessionRiskMult=1.0
+
+# Strategy Configuration - Professional multi-timeframe
+InpStrategyType=0
+InpUseMultiTimeframe=true
+InpHigherTimeframe=16385
+InpTrendConfirmation=true
+InpUseVolatilityFilter=true
+
+# Scaling Logic - Professional institutional scaling
+InpUseScaling=true
+InpScaleInMultiplier=1.0
+InpScaleOutMultiplier=0.8
+InpMaxScaleLevels=3
+InpScaleDistancePoints=120
+
+# News Filter - Professional EM news management
+InpUseNewsFilter=true
+InpMinsBeforeNews=30
+InpMinsAfterNews=60
+InpNewsRiskMultiplier=0.5
+InpNewsCompleteHalt=false
+InpHighImpactOnly=false
+
+# Drawdown Protection - Professional institutional levels
+InpUseDrawdownRiskScaling=true
+InpDrawdownThresholds=6.0,12.0,18.0
+InpDrawdownRiskMultipliers=0.9,0.6,0.3
+InpEmergencyStopLevel=25.0
+
+# ATR Settings - Professional EM volatility
+InpAtrMultiplier=2.2
+InpAtrPeriod=20
+InpMinAtrPoints=180
+InpMaxAtrPoints=700
+
+# Correlation Filter - Professional EM correlation management
+InpUseCorrelationFilter=true
+InpMaxCorrelatedPairs=2
+InpCorrelationThreshold=0.65
+InpCorrelationRiskReduction=0.7
+
+# Position Management - Professional institutional
+InpUseBreakeven=true
+InpBreakevenTriggerPoints=150
+InpBreakevenOffsetPoints=30
+InpUseTrailingStop=true
+InpTrailingStartPoints=250
+InpTrailingStepPoints=80
+
+# Market Regime - Professional EM regime detection
+InpRiskMultTrending=1.0
+InpRiskMultRanging=0.8
+InpRiskMultCompression=0.6
+InpTrendStrengthThreshold=0.55
+
+# Circuit Breakers - Professional institutional protection
+InpUseCircuitBreaker=true
+InpCircuitThreshold=10.0
+InpCircuitCooldownHours=4
+InpCircuitMaxLossPoints=800

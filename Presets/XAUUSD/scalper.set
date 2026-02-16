@@ -1,0 +1,88 @@
+# XAUUSD Scalper Configuration
+# Gold High-Frequency Trading Specialist
+# Optimized for gold's intraday volatility and liquidity patterns
+
+# Risk Management - Scalping with 1.1% risk per trade
+InpRiskPerTrade=1.1
+InpMaxDailyLoss=5.5
+InpDailyProfitTarget=4.4
+InpMaxPositionsPerSymbol=8
+InpMaxTradesPerDay=20
+
+# AI Integration - Fast scalping AI for gold
+InpUseAI=true
+InpMinAIConfidence=0.62
+InpMaxAIRiskMultiplier=2.8
+InpAIMinSecondsBetweenCalls=45
+InpAIConfirmationRequired=false
+
+# Spread Management - Scalping with gold spreads
+InpMaxSpreadPoints=140
+InpSpreadMultiplier=0.7
+InpSlippagePoints=60
+
+# Session Timing - Gold scalping during liquid hours
+InpUseSessionFilter=true
+InpSessionStartHour=8
+InpSessionEndHour=19
+InpSessionRiskMult=1.6
+
+# Strategy Configuration - M5 scalping specialist
+InpStrategyType=2
+InpUseMultiTimeframe=true
+InpHigherTimeframe=5
+InpTrendConfirmation=false
+InpUseVolatilityFilter=true
+
+# Scaling Logic - Scalping with quick scaling
+InpUseScaling=true
+InpScaleInMultiplier=2.0
+InpScaleOutMultiplier=1.3
+InpMaxScaleLevels=4
+InpScaleDistancePoints=80
+
+# News Filter - Scalping avoids major gold news
+InpUseNewsFilter=true
+InpMinsBeforeNews=20
+InpMinsAfterNews=40
+InpNewsRiskMultiplier=0.1
+InpNewsCompleteHalt=true
+InpHighImpactOnly=true
+
+# Drawdown Protection - Scalping drawdown control
+InpUseDrawdownRiskScaling=true
+InpDrawdownThresholds=12.0,20.0,28.0
+InpDrawdownRiskMultipliers=1.3,0.9,0.6
+InpEmergencyStopLevel=35.0
+
+# ATR Settings - Scalping with tight gold ATR
+InpAtrMultiplier=1.3
+InpAtrPeriod=8
+InpMinAtrPoints=70
+InpMaxAtrPoints=250
+
+# Correlation Filter - Scalping correlation control
+InpUseCorrelationFilter=false
+InpMaxCorrelatedPairs=0
+InpCorrelationThreshold=0.0
+InpCorrelationRiskReduction=0.0
+
+# Position Management - Scalping quick exits
+InpUseBreakeven=true
+InpBreakevenTriggerPoints=50
+InpBreakevenOffsetPoints=15
+InpUseTrailingStop=true
+InpTrailingStartPoints=70
+InpTrailingStepPoints=25
+
+# Market Regime - Scalping all gold market conditions
+InpRiskMultTrending=1.3
+InpRiskMultRanging=1.1
+InpRiskMultCompression=0.9
+InpTrendStrengthThreshold=0.3
+
+# Circuit Breakers - Scalping circuit protection
+InpUseCircuitBreaker=true
+InpCircuitThreshold=18.0
+InpCircuitCooldownHours=1
+InpCircuitMaxLossPoints=350

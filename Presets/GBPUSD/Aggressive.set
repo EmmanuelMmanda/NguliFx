@@ -1,0 +1,209 @@
+; NguliFxAlgo GBPUSD Aggressive Configuration
+; Maximum profit potential with managed risk for GBPUSD
+; High-risk, high-reward strategy optimized for cable volatility
+; Risk: High (1.8% per trade)
+; Target: 18-35% monthly returns with aggressive scaling
+
+[Common]
+InpMagicNumber=20260317
+StrategyMode=0
+
+; ===== AI CONFIGURATION - AGGRESSIVE MAXIMUM =====
+InpUseAI=true
+InpAIInfluenceMode=1
+InpAICallOnNewBar=true
+InpAICallOnSignal=true
+InpAICallOnRegimeChange=true
+InpAIMinSecondsBetweenCalls=30
+InpMinAIConfidence=0.55
+InpMaxAIRiskMultiplier=2.5
+InpEnableAINotifications=true
+InpEnableAIStrategySwitching=true
+InpEnableAISelfOptimization=true
+InpAINewsIntelligenceMode=1
+InpAIExplainDecisions=true
+InpAIStrategyCooldownBars=1
+InpAIStrategyValidationBars=5
+
+; ===== RISK MANAGEMENT - AGGRESSIVE MAXIMUM =====
+InpRiskPerTrade=1.8
+InpUseFixedLot=false
+InpFixedLot=0.04
+InpMaxTradesPerDay=8
+InpMaxDailyLoss=6.0
+InpEquityGuard=20.0
+InpUseDynamicRisk=true
+InpUsePortfolioRiskCap=true
+InpMaxPortfolioRiskPct=4.0
+
+; ===== POSITION LIMITS - AGGRESSIVE =====
+InpMaxPositionsPerSymbol=3
+InpPostInitCooldownSeconds=10
+
+; ===== STOP LOSS & TAKE PROFIT - AGGRESSIVE RATIOS =====
+InpUseAtrStops=true
+InpAtrMultiplierSL=0.9
+InpAtrMultiplierTP=4.5
+InpSLPoints=80
+InpTPPoints=400
+
+; ===== MARKET CONDITIONS - AGGRESSIVE 24/7 =====
+InpUseTimeFilter=false
+InpStartHour=0
+InpEndHour=24
+InpOnlyProDuringSessions=false
+InpSessionRiskMult=1.8
+
+; ===== REGIME RISK SCALING - AGGRESSIVE MAXIMUM =====
+InpUseRegimeRiskScaling=true
+InpRiskMultCompression=1.5
+InpRiskMultExpansion=2.2
+InpRiskMultTrending=2.8
+InpRiskMultRanging=2.0
+InpRiskMultVolatile=1.2
+
+; ===== DRAWDOWN PROTECTION - AGGRESSIVE DISABLED =====
+InpUseDrawdownRiskScaling=false
+
+; ===== NEWS FILTER - AGGRESSIVE REDUCED =====
+InpUseNewsFilter=false
+InpMinsBeforeNews=15
+InpMinsAfterNews=25
+InpNewsCompleteHalt=false
+InpNewsRiskMultiplier=2.8
+
+; ===== DAILY TARGETS - AGGRESSIVE MAXIMUM =====
+InpDailyProfitTarget=6.0
+
+; ===== EXECUTION QUALITY - AGGRESSIVE TOLERANCE =====
+InpMaxSpreadPoints=80
+InpMaxSlippagePoints=40
+InpMaxLotsPerOrder=0.0
+InpTrackExecutionQuality=true
+
+; ===== BREAKEVEN & TRAILING - AGGRESSIVE FAST =====
+InpEnableBreakEven=true
+InpBreakEvenTriggerPct=25.0
+InpBreakEvenOffsetPoints=1
+InpEnableTrailing=true
+InpTrailingMode=1
+InpTrailingTriggerPct=35.0
+InpTrailingLockPct=15.0
+InpTrailingAtrMult=2.5
+
+; ===== PARTIAL CLOSE - AGGRESSIVE MAXIMUM =====
+InpEnablePartialClose=true
+InpPartialCloseTriggerPct=35.0
+InpPartialClosePercent=70.0
+
+; ===== TIME EXIT - AGGRESSIVE FAST =====
+InpEnableTimeExit=false
+InpMaxMinutesInTrade=0
+
+; ===== FRIDAY CLOSE - AGGRESSIVE DISABLED =====
+InpAutoCloseFriday=false
+InpFridayCloseHour=22
+InpFridayCloseMinute=0
+
+; ===== MULTI-TIMEFRAME CONFIRMATION - AGGRESSIVE DISABLED =====
+InpUseMultiTimeframe=false
+
+; ===== CORRELATION PROTECTION - AGGRESSIVE DISABLED =====
+InpUseCorrelation=false
+
+; ===== MACRO BIAS - AGGRESSIVE YIELD FOCUS =====
+InpUseMacroBias=true
+InpDxySymbol=DXY
+InpMacroTimeframe=16385
+InpMacroFastMA=20
+InpMacroSlowMA=100
+InpUseYieldSpread=true
+InpUS10YSymbol=US10Y
+InpUS02YSymbol=US02Y
+
+; ===== STRUCTURE CONFIRMATION - AGGRESSIVE DISABLED =====
+InpUseStructureConfirm=false
+InpStructureLookbackBars=60
+InpStructureConfirmBars=1
+InpDisplacementAtrMult=0.6
+InpStructureVolumeSpikeMult=2.5
+
+; ===== ORDER FLOW - AGGRESSIVE CONFIRMATION =====
+InpUseOrderFlowProxy=true
+InpOrderFlowHardFilter=false
+InpOrderFlowLookbackBars=15
+InpOrderFlowMinAbsDeltaZ=0.5
+InpOrderFlowMinVolumeZ=0.3
+
+; ===== INSTITUTIONAL LEVELS - AGGRESSIVE DISABLED =====
+InpShowInstitutionalLevels=false
+InpShowFVGZones=false
+InpShowOrderBlockZones=false
+InpMaxFVGZones=2
+InpMaxOBZones=2
+
+; ===== NOTIFICATIONS - AGGRESSIVE FAST =====
+InpEnablePush=true
+InpEnableMail=false
+InpEnableAlerts=true
+InpCleanExpertsLog=false
+InpNotifDetail=3
+InpProgressInterval=3
+InpProgressMinutes=5
+InpIntelHeartbeatMinutes=15
+InpForceHeartbeatPush=true
+InpIncludeIntel=true
+InpNotifyOnNoSignal=false
+InpEnableChartFeed=true
+InpChartFeedMaxItems=15
+InpChartFeedMaxChars=1500
+
+; ===== MARGIN & SAFETY - AGGRESSIVE FAST ALERTS =====
+InpEnableMarginAlert=true
+InpMarginAlertLevelPct=30.0
+InpMarginAlertCooldownMinutes=3
+InpEnableDailySummary=true
+InpDailySummaryEarliestHour=0
+InpDailySummaryHour=23
+InpDailySummaryMinute=30
+InpForceDailySummaryPush=true
+
+; ===== SCALPER SETTINGS - AGGRESSIVE ULTRA =====
+InpScalperTimeframe=1
+InpScalperUseSessionFilter=false
+InpScalperSessionStartHour=0
+InpScalperSessionEndHour=24
+InpScalperTickVolLookback=5
+InpScalperMinTickVolMult=0.6
+InpScalperFastEma=2
+InpScalperSlowEma=8
+InpScalperRsiPeriod=3
+InpScalperRsiOversoldMax=18
+InpScalperRsiOverboughtMin=82
+InpScalperAtrPeriod=3
+InpScalperAdxPeriod=3
+InpScalperMinAdx=8.0
+InpScalperBreakoutLookback=2
+InpScalperBreakoutAtrMult=0.008
+InpScalperAllowBreakout=true
+InpScalperAllowContinuation=true
+InpScalperExitOnRsiReversal=true
+InpScalperExitRsiDelta=0.08
+InpScalperExitOnEmaCross=true
+InpScalperMinStrength=0.45
+
+; ===== SWING SETTINGS - AGGRESSIVE FAST =====
+InpSwingTimeframe=30
+InpSwingEmaFast=15
+InpSwingEmaSlow=60
+InpSwingMacdFast=5
+InpSwingMacdSlow=13
+InpSwingMacdSignal=3
+InpSwingBreakoutLookback=8
+InpSwingAtrPeriod=5
+InpSwingBreakoutAtrMult=0.05
+InpSwingAtrMinPoints=0.0
+InpSwingAtrMaxPoints=0.0
+InpSwingExitOnTrendReversal=true
+InpSwingExitOnMacdReversal=true
+InpSwingMinStrength=0.48

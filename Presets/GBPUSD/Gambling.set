@@ -1,0 +1,207 @@
+; NguliFxAlgo GBPUSD Gambling Configuration
+; Ultra-aggressive high-risk high-reward for GBPUSD
+; Maximum profit potential with extreme volatility capture
+; Risk: Extreme (2.5% per trade)
+; Target: 25-50% monthly returns with maximum leverage
+
+[Common]
+InpMagicNumber=20260318
+StrategyMode=0
+
+; ===== AI CONFIGURATION - GAMBLING MAXIMUM =====
+InpUseAI=true
+InpAIInfluenceMode=1
+InpAICallOnNewBar=true
+InpAICallOnSignal=true
+InpAICallOnRegimeChange=true
+InpAIMinSecondsBetweenCalls=15
+InpMinAIConfidence=0.50
+InpMaxAIRiskMultiplier=3.5
+InpEnableAINotifications=true
+InpEnableAIStrategySwitching=true
+InpEnableAISelfOptimization=true
+InpAINewsIntelligenceMode=1
+InpAIExplainDecisions=false
+InpAIStrategyCooldownBars=1
+InpAIStrategyValidationBars=3
+
+; ===== RISK MANAGEMENT - GAMBLING EXTREME =====
+InpRiskPerTrade=2.5
+InpUseFixedLot=false
+InpFixedLot=0.05
+InpMaxTradesPerDay=15
+InpMaxDailyLoss=10.0
+InpEquityGuard=30.0
+InpUseDynamicRisk=true
+InpUsePortfolioRiskCap=true
+InpMaxPortfolioRiskPct=8.0
+
+; ===== POSITION LIMITS - GAMBLING MAXIMUM =====
+InpMaxPositionsPerSymbol=5
+InpPostInitCooldownSeconds=3
+
+; ===== STOP LOSS & TAKE PROFIT - GAMBLING EXTREME RATIOS =====
+InpUseAtrStops=true
+InpAtrMultiplierSL=0.5
+InpAtrMultiplierTP=6.0
+InpSLPoints=40
+InpTPPoints=500
+
+; ===== MARKET CONDITIONS - GAMBLING 24/7 =====
+InpUseTimeFilter=false
+InpStartHour=0
+InpEndHour=24
+InpOnlyProDuringSessions=false
+InpSessionRiskMult=2.5
+
+; ===== REGIME RISK SCALING - GAMBLING MAXIMUM =====
+InpUseRegimeRiskScaling=true
+InpRiskMultCompression=2.0
+InpRiskMultExpansion=3.0
+InpRiskMultTrending=4.0
+InpRiskMultRanging=2.5
+InpRiskMultVolatile=1.5
+
+; ===== DRAWDOWN PROTECTION - GAMBLING DISABLED =====
+InpUseDrawdownRiskScaling=false
+
+; ===== NEWS FILTER - GAMBLING MINIMUM =====
+InpUseNewsFilter=false
+InpMinsBeforeNews=5
+InpMinsAfterNews=10
+InpNewsCompleteHalt=false
+InpNewsRiskMultiplier=4.0
+
+; ===== DAILY TARGETS - GAMBLING MAXIMUM =====
+InpDailyProfitTarget=10.0
+
+; ===== EXECUTION QUALITY - GAMBLING MAXIMUM TOLERANCE =====
+InpMaxSpreadPoints=120
+InpMaxSlippagePoints=80
+InpMaxLotsPerOrder=0.0
+InpTrackExecutionQuality=true
+
+; ===== BREAKEVEN & TRAILING - GAMBLING ULTRA FAST =====
+InpEnableBreakEven=true
+InpBreakEvenTriggerPct=15.0
+InpBreakEvenOffsetPoints=0
+InpEnableTrailing=true
+InpTrailingMode=1
+InpTrailingTriggerPct=20.0
+InpTrailingLockPct=5.0
+InpTrailingAtrMult=4.0
+
+; ===== PARTIAL CLOSE - GAMBLING MAXIMUM =====
+InpEnablePartialClose=true
+InpPartialCloseTriggerPct=25.0
+InpPartialClosePercent=80.0
+
+; ===== TIME EXIT - GAMBLING DISABLED =====
+InpEnableTimeExit=false
+InpMaxMinutesInTrade=0
+
+; ===== FRIDAY CLOSE - GAMBLING DISABLED =====
+InpAutoCloseFriday=false
+InpFridayCloseHour=22
+InpFridayCloseMinute=0
+
+; ===== MULTI-TIMEFRAME CONFIRMATION - GAMBLING DISABLED =====
+InpUseMultiTimeframe=false
+
+; ===== CORRELATION PROTECTION - GAMBLING DISABLED =====
+InpUseCorrelation=false
+
+; ===== MACRO BIAS - GAMBLING MINIMAL =====
+InpUseMacroBias=false
+InpDxySymbol=DXY
+InpMacroTimeframe=16385
+InpMacroFastMA=10
+InpMacroSlowMA=50
+InpUseYieldSpread=false
+
+; ===== STRUCTURE CONFIRMATION - GAMBLING DISABLED =====
+InpUseStructureConfirm=false
+InpStructureLookbackBars=20
+InpStructureConfirmBars=1
+InpDisplacementAtrMult=0.3
+InpStructureVolumeSpikeMult=5.0
+
+; ===== ORDER FLOW - GAMBLING MINIMAL =====
+InpUseOrderFlowProxy=false
+InpOrderFlowHardFilter=false
+InpOrderFlowLookbackBars=5
+InpOrderFlowMinAbsDeltaZ=0.2
+InpOrderFlowMinVolumeZ=0.1
+
+; ===== INSTITUTIONAL LEVELS - GAMBLING DISABLED =====
+InpShowInstitutionalLevels=false
+InpShowFVGZones=false
+InpShowOrderBlockZones=false
+InpMaxFVGZones=1
+InpMaxOBZones=1
+
+; ===== NOTIFICATIONS - GAMBLING ULTRA FAST =====
+InpEnablePush=true
+InpEnableMail=false
+InpEnableAlerts=true
+InpCleanExpertsLog=false
+InpNotifDetail=3
+InpProgressInterval=1
+InpProgressMinutes=1
+InpIntelHeartbeatMinutes=5
+InpForceHeartbeatPush=true
+InpIncludeIntel=false
+InpNotifyOnNoSignal=false
+InpEnableChartFeed=true
+InpChartFeedMaxItems=20
+InpChartFeedMaxChars=2000
+
+; ===== MARGIN & SAFETY - GAMBLING ULTRA FAST ALERTS =====
+InpEnableMarginAlert=true
+InpMarginAlertLevelPct=20.0
+InpMarginAlertCooldownMinutes=1
+InpEnableDailySummary=true
+InpDailySummaryEarliestHour=0
+InpDailySummaryHour=23
+InpDailySummaryMinute=59
+InpForceDailySummaryPush=true
+
+; ===== SCALPER SETTINGS - GAMBLING ULTRA =====
+InpScalperTimeframe=1
+InpScalperUseSessionFilter=false
+InpScalperSessionStartHour=0
+InpScalperSessionEndHour=24
+InpScalperTickVolLookback=2
+InpScalperMinTickVolMult=0.3
+InpScalperFastEma=1
+InpScalperSlowEma=3
+InpScalperRsiPeriod=2
+InpScalperRsiOversoldMax=10
+InpScalperRsiOverboughtMin=90
+InpScalperAtrPeriod=2
+InpScalperAdxPeriod=2
+InpScalperMinAdx=3.0
+InpScalperBreakoutLookback=1
+InpScalperBreakoutAtrMult=0.002
+InpScalperAllowBreakout=true
+InpScalperAllowContinuation=true
+InpScalperExitOnRsiReversal=true
+InpScalperExitRsiDelta=0.02
+InpScalperExitOnEmaCross=true
+InpScalperMinStrength=0.25
+
+; ===== SWING SETTINGS - GAMBLING MINIMAL =====
+InpSwingTimeframe=30
+InpSwingEmaFast=5
+InpSwingEmaSlow=20
+InpSwingMacdFast=2
+InpSwingMacdSlow=5
+InpSwingMacdSignal=1
+InpSwingBreakoutLookback=3
+InpSwingAtrPeriod=2
+InpSwingBreakoutAtrMult=0.01
+InpSwingAtrMinPoints=0.0
+InpSwingAtrMaxPoints=0.0
+InpSwingExitOnTrendReversal=true
+InpSwingExitOnMacdReversal=true
+InpSwingMinStrength=0.30
