@@ -2,6 +2,8 @@
 !*/
 !.gitignore
 !README.md
+!LICENSE.txt
+!LICENSE.TXT
 !Scripts/*.ex5
 !Scripts/**/*.ex5
 !Scripts/*.EX5

@@ -1,0 +1,138 @@
+END USER LICENSE AGREEMENT (EULA)
+FOR EXPERT ADVISOR SOFTWARE (EX5 & SET FILES)
+
+Copyright (c) 2026 NguliFx Ltd
+All Rights Reserved.
+
+IMPORTANT: PLEASE READ THIS LICENSE AGREEMENT CAREFULLY BEFORE USING THIS SOFTWARE.
+
+By installing, copying, accessing, or using this software, you agree to be bound by the terms of this Agreement. If you do not agree to the terms of this Agreement, do not install or use the software.
+
+------------------------------------------------------------
+1. DEFINITIONS
+------------------------------------------------------------
+
+"Software" refers to the compiled Expert Advisor (.ex5) files, configuration (.set) files, and any accompanying documentation provided by the Author.
+
+"Author" refers to [Your Name / Company Name].
+
+"User" refers to the individual or entity using the Software.
+
+------------------------------------------------------------
+2. LICENSE GRANT
+------------------------------------------------------------
+
+The Author grants the User a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to use the Software solely for personal trading purposes.
+
+This license does NOT transfer ownership of the Software.
+
+------------------------------------------------------------
+3. RESTRICTIONS
+------------------------------------------------------------
+
+The User MAY NOT:
+
+- Reverse engineer, decompile, disassemble, or attempt to derive the source code.
+- Modify, adapt, translate, or create derivative works.
+- Redistribute, share, resell, rent, lease, sublicense, or transfer the Software.
+- Make the Software publicly available.
+- Use the Software for illegal purposes.
+- Remove or alter any copyright notices.
+
+Any violation will result in immediate termination of this license.
+
+------------------------------------------------------------
+4. INTELLECTUAL PROPERTY
+------------------------------------------------------------
+
+The Software is the exclusive intellectual property of the Author.
+
+All trading strategies, algorithms, logic, and design contained within the Software remain confidential and proprietary.
+
+No ownership rights are granted to the User.
+
+------------------------------------------------------------
+5. NO FINANCIAL OR INVESTMENT ADVICE
+------------------------------------------------------------
+
+The Software is provided for educational and informational purposes only.
+
+The Author does NOT provide financial, investment, legal, or tax advice.
+
+Use of the Software does NOT constitute investment advice or a recommendation to trade any financial instrument.
+
+The User is solely responsible for all trading decisions.
+
+------------------------------------------------------------
+6. RISK DISCLOSURE
+------------------------------------------------------------
+
+Trading foreign exchange (Forex), CFDs, cryptocurrencies, futures, and other financial instruments involves substantial risk.
+
+You may lose all or more than your initial investment.
+
+Past performance is not indicative of future results.
+
+The User acknowledges full responsibility for any and all trading risks.
+
+------------------------------------------------------------
+7. DISCLAIMER OF WARRANTIES
+------------------------------------------------------------
+
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND.
+
+THE AUTHOR DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:
+
+- MERCHANTABILITY
+- FITNESS FOR A PARTICULAR PURPOSE
+- NON-INFRINGEMENT
+- ACCURACY OR RELIABILITY
+
+The Author does NOT guarantee uninterrupted or error-free operation.
+
+------------------------------------------------------------
+8. LIMITATION OF LIABILITY
+------------------------------------------------------------
+
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR:
+
+- ANY TRADING LOSSES
+- LOSS OF PROFITS
+- LOSS OF DATA
+- INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES
+- BROKER ISSUES OR PLATFORM FAILURES
+
+The User assumes full responsibility for all outcomes resulting from the use of the Software.
+
+------------------------------------------------------------
+9. INDEMNIFICATION
+------------------------------------------------------------
+
+The User agrees to indemnify and hold harmless the Author from any claims, damages, liabilities, or expenses arising from the use or misuse of the Software.
+
+------------------------------------------------------------
+10. TERMINATION
+------------------------------------------------------------
+
+This license is effective until terminated.
+
+It will terminate automatically if the User violates any term of this Agreement.
+
+Upon termination, the User must delete all copies of the Software.
+
+------------------------------------------------------------
+11. GOVERNING LAW
+------------------------------------------------------------
+
+This Agreement shall be governed by and interpreted in accordance with the laws of [Your Country / Jurisdiction].
+
+------------------------------------------------------------
+12. ENTIRE AGREEMENT
+------------------------------------------------------------
+
+This Agreement constitutes the entire agreement between the Author and the User and supersedes all prior agreements.
+
+------------------------------------------------------------
+
+By using this Software, you acknowledge that you have read, understood, and agreed to this License Agreement.
+
