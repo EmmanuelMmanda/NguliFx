@@ -1,11 +1,13 @@
 # 🦁 NguliFxAlgo — A Serious Trading System That Puts Safety First
 
-NguliFxAlgo is a professional algorithmic trading system built for real‑world conditions. It combines adaptive market intelligence with institutional risk controls, clear notifications, and battle‑tested presets. The goal is simple: protect capital, reduce decision stress, and grow accounts responsibly.
+NguliFxAlgo is a professional AI powered algorithmic trading system built for real‑world conditions. It combines adaptive market intelligence with institutional risk controls, clear notifications, and battle‑tested presets. The goal is simple: protect capital, reduce decision stress, and grow accounts responsibly.
 
 ## Why Traders Choose NguliFxAlgo
 - Adaptive to market conditions: automatically reads regimes and adjusts behavior.
 - Risk comes first: daily loss stops, equity drawdown guards, correlation limits.
 - Alerts that matter: real‑time status, trade updates, and risk warnings.
+- Notifications that matter: real‑time status, trade updates, and risk warnings across multiple channels (mobile push, Telegram, e-mail, in app).
+- AI as strategy/decision layer: optional AI engine can act as primary signal generator, regime validator, or risk adjuster with full human override.
 - Scales with you: from small accounts to larger deployments.
 - Clean setup: presets for different styles, optional AI assist, and a clear dashboard.
 
@@ -15,7 +17,8 @@ NguliFxAlgo is a professional algorithmic trading system built for real‑world 
 - News guard: pauses at high‑impact events to avoid chaotic fills.
 - Dynamic risk: ATR‑based sizing with session‑aware scaling and circuit breakers.
 - Execution quality: monitors spread/slippage and reports broker conditions.
-- Notifications hub: mobile push and Telegram (optional) with rich context.
+- Notifications hub: mobile push, EMail and Telegram (optional) with rich context.
+- AI Decision Layer: optional, on-chart status, influences entries/exits, regime confirmation, and risk sizing with human override.
 - Licensing and stability: reliable server validation with clear on‑chart status.
 
 ## Safety First
