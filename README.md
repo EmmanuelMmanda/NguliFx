@@ -1,6 +1,6 @@
-# 🦁 NguliFxAlgo — AI Powered Expert Advisor (Safety First)
+# 🦁 NguliFxAlgo — AI Powered Expert Advisor 
 
-NguliFxAlgo is a professional AI powered algorithmic trading system built for real‑world conditions. It combines adaptive market intelligence with institutional risk controls, clear notifications, and battle‑tested presets. The goal is simple: protect capital, reduce decision stress, and grow accounts responsibly.
+NguliFxAlgo is a professional AI powered algorithmic trading system (Expert Advisor) built for real‑world conditions. It combines adaptive market intelligence with institutional risk controls, clear notifications, and battle‑tested presets. The goal is simple: protect capital, reduce decision stress, and grow accounts responsibly.
 
 ## Why Traders Choose NguliFxAlgo
 - Adaptive to market conditions: automatically reads regimes and adjusts behavior.
